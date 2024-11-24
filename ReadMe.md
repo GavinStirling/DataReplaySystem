@@ -1,6 +1,6 @@
 # Data Replay System
 
-The aim of this project is to demonstrate a multi-threaded TCP server which generates data and streams it to various clients.
+The aim of this project is to demonstrate a multi-threaded TCP server which generates stochastic data and streams it to various clients.
 
 ## 1. Random Walk Server (Data Generation)
 
