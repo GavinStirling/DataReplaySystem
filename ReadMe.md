@@ -1,12 +1,12 @@
 # Data Replay System
 
-The aim of this project is to demonstrate a multi-threaded TCP server which generates stochastic data and streams it to various clients.
+The aim of this project is to demonstrate a multi-threaded TCP server which generates stochastic data and streams it to various clients. The data is also stored in a basic SQLite database so that a separate server instance can replay sections of historical data.
 
 ## 1. Random Walk Server (Data Generation)
 
 This is a multi-threaded TCP server which generates walking data. A random number is selected between 20.00 and 80.00 and increments the number by 0.01. The probability of the increment being positive or negative can be set. The increment can also be set depending on the value of the number. For example, if the number is greater than or equal to 60.00, then increment by 0,05 instead of 0.01. The server is multi-threaded so that multiple clients can connect to the server at the same time.
 
-Once the number has been generated and stream, the number is stored in a bas SQLite server for later use.
+Once the number has been generated and stream, the number is stored in a basic SQLite server for later use.
 
 ## 2. Console Data Display
 
